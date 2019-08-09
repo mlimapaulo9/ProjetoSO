@@ -46,3 +46,13 @@ syscall
 	syscall
 .end_macro 
 
+.macro load_var(%label, %reg)
+	la $t0, %label
+	lw %reg, 0($t0)
+.end_macro 
+
+.macro store_var(%label, %reg)
+	la $t0, %label
+	sw %reg, 0($t0)
+.end_macro 
+
