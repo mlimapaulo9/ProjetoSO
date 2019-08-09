@@ -1,0 +1,1 @@
+the Program Counter will be initialized to the address of the text segment statement with the global label 'main' if it exists. If it does not exist or if the setting is not selected, the Program Counter will be initialized to the default text segment starting address. 
